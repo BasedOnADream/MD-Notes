@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap');
+
+:root
+{
+    --AccentColor: #424567;
+}
+
+body
+{
+    margin: 0;
+    font-family: 'Abyssinica SIL', 'serif';
+    user-select: none;
+    max-height: 1080px;
+    overflow: hidden;
+}
+
+nav
+{
+    width: calc(50% - 6px);
+    float: left;
+    height: 100vh;
+    overflow: auto;
+}
+
+nav h1
+{
+    text-align: center
+}
+
+nav #downloadNote
+{
+    display: none
+}
+
+nav button
+{
+    background-color: var(--AccentColor);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+nav div.noteButton
+{
+    width: calc(100% - 40px);
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    padding: 20px;
+    height: 30px;
+    color: black;
+    border-bottom: 1px solid var(--AccentColor);
+}
+
+nav div.noteButton:last-of-type
+{
+    border-bottom: 0;
+}
+
+nav div.noteButton.active
+{
+    background-color: var(--AccentColor);
+    color: white;
+}
+div .noteButton button
+{
+    font-size: 20px;
+    background-color: transparent;
+    float: right;
+    color: var(--AccentColor);
+}
+div .noteButton.active button
+{
+    color: white;
+}
+div .noteButton button:first-child:hover
+{
+    color: red;
+}
+div .noteButton button:hover
+{
+    color:dodgerblue;
+}
+div#slider
+{
+    background-color: gainsboro;
+    float: left;
+    width: 10px;
+    height: calc(100vh - 2px);
+    cursor:col-resize;
+    border: 1px solid black;
+}
+
+main
+{
+    float: left;
+    width: calc(50% - 6px);
+    box-sizing: border-box;
+    background-color: rgb(245, 245, 245);
+}
+
+main button
+{
+    background-color: transparent;
+    margin: 10px;
+    border: 0;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+main blockquote
+{
+    margin-left: 0px;
+    padding-left: 20px;
+    border-left: 5px solid gray;
+    color:rgb(75, 75, 75);
+}
+main a
+{
+    color: blue;
+    text-decoration: none;
+}
+main button.active
+{
+    border: 1px solid gainsboro;
+}
+
+main #Write
+{
+    height: 78vh;
+    background-color: white;
+    overflow-x: auto;
+    outline: none;
+    padding: 10px;
+}
+
+main #list
+{
+    border-bottom: 1px solid grey;
+}
+
+main #PreviewMode
+{
+    display: none;
+}
+main #PreviewMode #Preview
+{
+    border-top: 1px solid grey;
+    padding: 5px;
+    background-color: white;
+    height: 90vh;
+}
+#Preview h1, h2, h3, h4, h5, h6
+{
+    margin: 0;
+}
+#Preview img
+{
+    height: 200px;
+}
+#Preview input
+{
+    user-select: none;
+}
+#Preview h1, #Preview h2
+{
+    padding-bottom: .3em;
+    border-bottom: 1px solid #eee;
+}
+#HeadingExtent
+{
+    display: none;
+    height: 44px;
+    width: 79px;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 20px;
+    z-index: 1;
+    border: 1px solid gainsboro;
+    background-color: rgb(245, 245, 245);
+}
+#HeadingExtent button
+{
+    font-size: 10px;
+    float: left;
+    margin:0;
+}
+#text button#Heading:hover ~ #HeadingExtent, #HeadingExtent:hover
+{
+    display: block;
+}
+
+#text button:hover, #advance button:hover, #list button:hover
+{
+    border: 1px solid gainsboro;
+    padding: 4px;
+}
+#Preview ul, ol
+{
+    margin: 0;
+}
