@@ -1,10 +1,10 @@
 # MD Notes
 
-### Overview
+### Overview 
 MD Notes is a web application made using ReactJS.
 It's purpose is to give an user easy ability to edit, create, download and preview markdown files.
 Every note is saved in the Localstorage.
-MD Notes idea was inspired by freeCodeCamp.org [ReactJS tutorial on YouTube](https://youtu.be/bMknfKXIFA8?list=PLeYcUSvfaLbsFkmUZQvbgUO1RplZ0Zx9f&t=36647).
+MD Notes idea was inspired by freeCodeCamp.org [ReactJS tutorial on YouTube](https://youtu.be/bMknfKXIFA8?t=36647).
 The editor was slightly improved compared to its counterpart from the video.
 Website design goes to [freeCodeCamp.org](https://www.freecodecamp.org/).
 Code is entirely mine excluding the ReactJS itself.
@@ -18,4 +18,4 @@ You are set just type `NPM START` in the app folder using command line to access
 ---
 ### Images
 ![previewMode Image](/images/previewMode.jpg)
-![writeMode Image](/images/writeMode.jpg)riteMode.jpg)
+![writeMode Image](/images/writeMode.jpg)
